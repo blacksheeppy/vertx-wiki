@@ -154,7 +154,7 @@ public class MainVerticle extends AbstractVerticle {
             context.put("rawContent", rawContent);
             context.put("content", Processor.process(rawContent));
             context.put("timestamp", new Date().toString());
-            templateEngine.render(context, "templates/page.ftl", ar -> {
+            templateEngine.render(context, "templates/", "page.ftl", ar -> {
               if (ar.succeeded()) {
                 context.response().putHeader("Content-Type", "text/html");
                 context.response().end(ar.result());
