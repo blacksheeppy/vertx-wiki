@@ -12,3 +12,4 @@ buildNumber.properties
 db/wiki.tmp/
 file-uploads/
 src/test/
+db/

@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2f1f7ee-8b5b-4030-b89d-7823f8e3410f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/footer.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/header.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/page.ftl" />
+    <list default="true" id="b2f1f7ee-8b5b-4030-b89d-7823f8e3410f" name="Default" comment="Se actualiza lista de archivos ignorados">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/HttpServerVerticle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/WikiDatabaseVerticle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db-queries.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/wiki.lck" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/wiki.lobs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/wiki.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/wiki.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/wiki.script" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java" afterPath="$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,107 +25,287 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MainVerticle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="70" column="15" lean-forward="false" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
+            <state relative-caret-position="522">
+              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#MainVerticle#0" expanded="true" />
+                <element signature="method#start#0;class#MainVerticle#0" expanded="true" />
+                <element signature="e#497#783#0" expanded="true" />
+                <element signature="e#796#930#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpServerVerticle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/HttpServerVerticle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="741">
+              <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#start#0;class#HttpServerVerticle#0" expanded="true" />
+                <element signature="e#1881#2164#0" expanded="true" />
+                <element signature="method#indexHandler#0;class#HttpServerVerticle#0" expanded="true" />
+                <element signature="e#2378#2965#0" expanded="true" />
+                <element signature="e#2659#2897#0" expanded="true" />
+                <element signature="method#pageRenderingHandler#0;class#HttpServerVerticle#0" expanded="true" />
+                <element signature="e#3310#4234#0" expanded="true" />
+                <element signature="e#3928#4166#0" expanded="true" />
+                <element signature="method#pageUpdateHandler#0;class#HttpServerVerticle#0" expanded="true" />
+                <element signature="e#4831#5087#0" expanded="true" />
+                <element signature="method#pageCreateHandler#0;class#HttpServerVerticle#0" expanded="true" />
+                <element signature="method#pageDeletionHandler#0;class#HttpServerVerticle#0" expanded="true" />
+                <element signature="e#5780#6023#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WikiDatabaseVerticle.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/WikiDatabaseVerticle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3291">
+              <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <folding>
+                <element signature="docComment;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="method#loadSqlQueries#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="method#start#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="e#2801#3479#0" expanded="true" />
+                <element signature="e#3081#3463#0" expanded="true" />
+                <element signature="method#onMessage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="method#fetchAllPages#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="e#4300#4984#0" expanded="true" />
+                <element signature="e#4448#4905#0" expanded="true" />
+                <element signature="method#fetchPage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="e#5136#6060#0" expanded="true" />
+                <element signature="e#5329#5981#0" expanded="true" />
+                <element signature="method#createPage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="e#6193#6767#0" expanded="true" />
+                <element signature="e#6491#6688#0" expanded="true" />
+                <element signature="method#savePage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="e#6898#7467#0" expanded="true" />
+                <element signature="e#7191#7388#0" expanded="true" />
+                <element signature="method#deletePage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="e#7559#8080#0" expanded="true" />
+                <element signature="e#7804#8001#0" expanded="true" />
+                <element signature="method#reportQueryError#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="class#SqlQuery#0;class#WikiDatabaseVerticle#0" expanded="true" />
+                <element signature="class#ErrorCodes#0;class#WikiDatabaseVerticle#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db-queries.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db-queries.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainVerticle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java">
+      <file leaf-file-name="Logger.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/util/logging/Logger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="131" column="18" lean-forward="true" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
+            <state relative-caret-position="128">
+              <caret line="217" column="13" lean-forward="false" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="13" />
               <folding>
+                <element signature="e#0#90506#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#MainVerticle#0" expanded="true" />
-                <element signature="method#start#0;class#MainVerticle#0" expanded="true" />
-                <element signature="method#stop#0;class#MainVerticle#0" expanded="true" />
-                <element signature="method#prepareDataBase#0;class#MainVerticle#0" expanded="true" />
-                <element signature="e#2294#2823#0" expanded="true" />
-                <element signature="e#2548#2807#0" expanded="true" />
-                <element signature="method#startHttpServer#0;class#MainVerticle#0" expanded="true" />
-                <element signature="e#3446#3710#0" expanded="true" />
-                <element signature="e#3945#4720#0" expanded="true" />
-                <element signature="e#4372#4638#0" expanded="true" />
-                <element signature="method#pageRenderingHandler#0;class#MainVerticle#0" expanded="true" />
-                <element signature="e#4937#6286#0" expanded="true" />
-                <element signature="e#5100#6220#0" expanded="true" />
-                <element signature="e#5870#6136#0" expanded="true" />
-                <element signature="method#pageCreateHandler#0;class#MainVerticle#0" expanded="true" />
-                <element signature="method#pageUpdateHandler#0;class#MainVerticle#0" expanded="true" />
-                <element signature="e#6995#7750#0" expanded="true" />
-                <element signature="e#7372#7684#0" expanded="true" />
-                <element signature="method#pageDeletionHandler#0;class#MainVerticle#0" expanded="true" />
-                <element signature="e#7896#8426#0" expanded="true" />
-                <element signature="e#8061#8360#0" expanded="true" />
+                <element signature="docComment;class#Logger#0" expanded="true" />
+                <element signature="class#LoggerBundle#0;class#Logger#0" expanded="true" />
+                <element signature="method#LoggerBundle#0;class#LoggerBundle#0;class#Logger#0" expanded="true" />
+                <element signature="method#get#0;class#LoggerBundle#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;field#GLOBAL_LOGGER_NAME#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getGlobal#0;class#Logger#0" expanded="true" />
+                <element signature="method#getGlobal#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;field#global#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#Logger#0;class#Logger#0" expanded="true" />
+                <element signature="method#Logger#0;class#Logger#0" expanded="true" />
+                <element signature="method#Logger#1;class#Logger#0" expanded="true" />
+                <element signature="method#setCallersClassLoaderRef#0;class#Logger#0" expanded="true" />
+                <element signature="method#getCallersClassLoader#0;class#Logger#0" expanded="true" />
+                <element signature="method#Logger#2;class#Logger#0" expanded="true" />
+                <element signature="method#checkPermission#0;class#Logger#0" expanded="true" />
+                <element signature="class#SystemLoggerHelper#0;class#Logger#0" expanded="true" />
+                <element signature="method#getBooleanProperty#0;class#SystemLoggerHelper#0;class#Logger#0" expanded="true" />
+                <element signature="method#demandLogger#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getLogger#0;class#Logger#0" expanded="true" />
+                <element signature="method#getLogger#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getLogger#1;class#Logger#0" expanded="true" />
+                <element signature="method#getLogger#1;class#Logger#0" expanded="true" />
+                <element signature="method#getPlatformLogger#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getAnonymousLogger#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getAnonymousLogger#1;class#Logger#0" expanded="true" />
+                <element signature="method#getAnonymousLogger#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getResourceBundle#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getResourceBundleName#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#setFilter#0;class#Logger#0" expanded="true" />
+                <element signature="method#setFilter#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getFilter#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#log#0;class#Logger#0" expanded="true" />
+                <element signature="method#log#0;class#Logger#0" expanded="true" />
+                <element signature="method#doLog#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#log#1;class#Logger#0" expanded="true" />
+                <element signature="method#log#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#log#2;class#Logger#0" expanded="true" />
+                <element signature="method#log#2;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#log#3;class#Logger#0" expanded="true" />
+                <element signature="method#log#3;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#log#4;class#Logger#0" expanded="true" />
+                <element signature="method#log#4;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#log#5;class#Logger#0" expanded="true" />
+                <element signature="method#log#5;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#log#6;class#Logger#0" expanded="true" />
+                <element signature="method#log#6;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logp#0;class#Logger#0" expanded="true" />
+                <element signature="method#logp#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logp#1;class#Logger#0" expanded="true" />
+                <element signature="method#logp#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logp#2;class#Logger#0" expanded="true" />
+                <element signature="method#logp#2;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logp#3;class#Logger#0" expanded="true" />
+                <element signature="method#logp#3;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logp#4;class#Logger#0" expanded="true" />
+                <element signature="method#logp#4;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logp#5;class#Logger#0" expanded="true" />
+                <element signature="method#logp#5;class#Logger#0" expanded="true" />
+                <element signature="method#doLog#1;class#Logger#0" expanded="true" />
+                <element signature="method#doLog#2;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logrb#0;class#Logger#0" expanded="true" />
+                <element signature="method#logrb#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logrb#1;class#Logger#0" expanded="true" />
+                <element signature="method#logrb#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logrb#2;class#Logger#0" expanded="true" />
+                <element signature="method#logrb#2;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logrb#3;class#Logger#0" expanded="true" />
+                <element signature="method#logrb#3;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logrb#4;class#Logger#0" expanded="true" />
+                <element signature="method#logrb#4;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#logrb#5;class#Logger#0" expanded="true" />
+                <element signature="method#logrb#5;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#entering#0;class#Logger#0" expanded="true" />
+                <element signature="method#entering#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#entering#1;class#Logger#0" expanded="true" />
+                <element signature="method#entering#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#entering#2;class#Logger#0" expanded="true" />
+                <element signature="method#entering#2;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#exiting#0;class#Logger#0" expanded="true" />
+                <element signature="method#exiting#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#exiting#1;class#Logger#0" expanded="true" />
+                <element signature="method#exiting#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#throwing#0;class#Logger#0" expanded="true" />
+                <element signature="method#throwing#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#severe#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#warning#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#info#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#config#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#fine#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#finer#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#finest#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#severe#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#warning#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#info#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#config#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#fine#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#finer#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#finest#1;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#setLevel#0;class#Logger#0" expanded="true" />
+                <element signature="method#setLevel#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getLevel#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#isLoggable#0;class#Logger#0" expanded="true" />
+                <element signature="method#isLoggable#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getName#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#addHandler#0;class#Logger#0" expanded="true" />
+                <element signature="method#addHandler#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#removeHandler#0;class#Logger#0" expanded="true" />
+                <element signature="method#removeHandler#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getHandlers#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#setUseParentHandlers#0;class#Logger#0" expanded="true" />
+                <element signature="method#setUseParentHandlers#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getUseParentHandlers#0;class#Logger#0" expanded="true" />
+                <element signature="method#findSystemResourceBundle#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#findResourceBundle#0;class#Logger#0" expanded="true" />
+                <element signature="method#findResourceBundle#0;class#Logger#0" expanded="true" />
+                <element signature="method#setupResourceInfo#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#setResourceBundle#0;class#Logger#0" expanded="true" />
+                <element signature="method#setResourceBundle#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#getParent#0;class#Logger#0" expanded="true" />
+                <element signature="method#getParent#0;class#Logger#0" expanded="true" />
+                <element signature="docComment;method#setParent#0;class#Logger#0" expanded="true" />
+                <element signature="method#setParent#0;class#Logger#0" expanded="true" />
+                <element signature="method#doSetParent#0;class#Logger#0" expanded="true" />
+                <element signature="method#removeChildLogger#0;class#Logger#0" expanded="true" />
+                <element signature="method#updateEffectiveLevel#0;class#Logger#0" expanded="true" />
+                <element signature="method#getEffectiveLoggerBundle#0;class#Logger#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BodyHandler.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-web/3.4.2/vertx-web-3.4.2-sources.jar!/io/vertx/ext/web/handler/BodyHandler.java">
+      <file leaf-file-name="Processor.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/github/rjeschke/txtmark/0.13/txtmark-0.13.jar!/com/github/rjeschke/txtmark/Processor.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+            <state relative-caret-position="176">
+              <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
               <folding>
-                <element signature="e#0#3075#0" expanded="true" />
+                <element signature="e#0#20449#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#BodyHandler#0" expanded="true" />
-                <element signature="docComment;field#DEFAULT_BODY_LIMIT#0;class#BodyHandler#0" expanded="true" />
-                <element signature="docComment;field#DEFAULT_UPLOADS_DIRECTORY#0;class#BodyHandler#0" expanded="true" />
-                <element signature="docComment;field#DEFAULT_MERGE_FORM_ATTRIBUTES#0;class#BodyHandler#0" expanded="true" />
-                <element signature="docComment;field#DEFAULT_DELETE_UPLOADED_FILES_ON_END#0;class#BodyHandler#0" expanded="true" />
-                <element signature="docComment;method#create#0;class#BodyHandler#0" expanded="true" />
-                <element signature="e#1736#1737#0" expanded="true" />
-                <element signature="e#1774#1775#0" expanded="true" />
-                <element signature="docComment;method#create#1;class#BodyHandler#0" expanded="true" />
-                <element signature="e#1990#1991#0" expanded="true" />
-                <element signature="e#2043#2044#0" expanded="true" />
-                <element signature="docComment;method#setBodyLimit#0;class#BodyHandler#0" expanded="true" />
-                <element signature="docComment;method#setUploadsDirectory#0;class#BodyHandler#0" expanded="true" />
-                <element signature="docComment;method#setMergeFormAttributes#0;class#BodyHandler#0" expanded="true" />
-                <element signature="docComment;method#setDeleteUploadedFilesOnEnd#0;class#BodyHandler#0" expanded="true" />
+                <element signature="method#Processor#0;class#Processor#0" expanded="true" />
+                <element signature="method#process#0;class#Processor#0" expanded="true" />
+                <element signature="method#process#1;class#Processor#0" expanded="true" />
+                <element signature="method#process#2;class#Processor#0" expanded="true" />
+                <element signature="method#process#3;class#Processor#0" expanded="true" />
+                <element signature="e#1928#1929#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="method#process#5;class#Processor#0" expanded="true" />
+                <element signature="method#process#6;class#Processor#0" expanded="true" />
+                <element signature="method#process#7;class#Processor#0" expanded="true" />
+                <element signature="method#process#8;class#Processor#0" expanded="true" />
+                <element signature="method#process#9;class#Processor#0" expanded="true" />
+                <element signature="method#process#10;class#Processor#0" expanded="true" />
+                <element signature="method#process#11;class#Processor#0" expanded="true" />
+                <element signature="method#process#12;class#Processor#0" expanded="true" />
+                <element signature="method#process#13;class#Processor#0" expanded="true" />
+                <element signature="method#process#14;class#Processor#0" expanded="true" />
+                <element signature="method#process#15;class#Processor#0" expanded="true" />
+                <element signature="method#process#16;class#Processor#0" expanded="true" />
+                <element signature="method#process#17;class#Processor#0" expanded="true" />
+                <element signature="method#process#18;class#Processor#0" expanded="true" />
+                <element signature="method#process#19;class#Processor#0" expanded="true" />
+                <element signature="method#process#20;class#Processor#0" expanded="true" />
+                <element signature="method#process#21;class#Processor#0" expanded="true" />
+                <element signature="method#process#22;class#Processor#0" expanded="true" />
+                <element signature="method#process#23;class#Processor#0" expanded="true" />
+                <element signature="method#process#24;class#Processor#0" expanded="true" />
+                <element signature="method#process#25;class#Processor#0" expanded="true" />
+                <element signature="method#process#26;class#Processor#0" expanded="true" />
+                <element signature="method#process#27;class#Processor#0" expanded="true" />
+                <element signature="method#readLines#0;class#Processor#0" expanded="true" />
+                <element signature="method#initListBlock#0;class#Processor#0" expanded="true" />
+                <element signature="method#recurse#0;class#Processor#0" expanded="true" />
+                <element signature="method#process#28;class#Processor#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BodyHandlerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-web/3.4.2/vertx-web-3.4.2-sources.jar!/io/vertx/ext/web/handler/impl/BodyHandlerImpl.java">
+      <file leaf-file-name="Boolean.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/Boolean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-528">
-              <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+            <state relative-caret-position="193">
+              <caret line="120" column="26" lean-forward="false" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
               <folding>
-                <element signature="e#0#7090#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="e#1641#1642#0" expanded="true" />
-                <element signature="e#1697#1698#0" expanded="true" />
-                <element signature="e#1749#1750#0" expanded="true" />
-                <element signature="e#1795#1796#0" expanded="true" />
-                <element signature="method#handle#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#setBodyLimit#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#setUploadsDirectory#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#setMergeFormAttributes#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#setDeleteUploadedFilesOnEnd#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#BHandler#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="e#3989#4494#0" expanded="true" />
-                <element signature="method#makeUploadDir#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#handle#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#uploadEnded#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#end#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#doEnd#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="method#deleteFileUploads#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-                <element signature="e#6579#7066#0" expanded="true" />
-                <element signature="e#6849#7042#0" expanded="true" />
+                <element signature="e#3553#3554#0" expanded="true" />
+                <element signature="e#3619#3620#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,98 +314,75 @@
       <file leaf-file-name="page.ftl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/page.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="368">
+              <caret line="23" column="92" lean-forward="false" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
+      <file leaf-file-name="SQLConnection.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-sql-common/3.4.2/vertx-sql-common-3.4.2-sources.jar!/io/vertx/ext/sql/SQLConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/header.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.ftl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AsyncResult.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/AsyncResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="86" column="11" lean-forward="false" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+            <state relative-caret-position="292">
+              <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
               <folding>
-                <element signature="e#0#6379#0" expanded="true" />
-                <element signature="docComment;class#AsyncResult#0" expanded="true" />
-                <element signature="docComment;method#result#0;class#AsyncResult#0" expanded="true" />
-                <element signature="docComment;method#cause#0;class#AsyncResult#0" expanded="true" />
-                <element signature="docComment;method#succeeded#0;class#AsyncResult#0" expanded="true" />
-                <element signature="docComment;method#failed#0;class#AsyncResult#0" expanded="true" />
-                <element signature="docComment;method#map#0;class#AsyncResult#0" expanded="true" />
-                <element signature="e#2728#2729#0" expanded="true" />
-                <element signature="e#2777#2778#0" expanded="true" />
-                <element signature="e#2829#2830#0" expanded="true" />
-                <element signature="e#2882#2883#0" expanded="true" />
-                <element signature="e#2931#2932#0" expanded="true" />
-                <element signature="e#2981#2982#0" expanded="true" />
-                <element signature="docComment;method#map#1;class#AsyncResult#0" expanded="true" />
-                <element signature="e#3469#3470#0" expanded="true" />
-                <element signature="e#3501#3502#0" expanded="true" />
-                <element signature="docComment;method#mapEmpty#0;class#AsyncResult#0" expanded="true" />
-                <element signature="e#3994#3995#0" expanded="true" />
-                <element signature="e#4023#4024#0" expanded="true" />
-                <element signature="docComment;method#otherwise#0;class#AsyncResult#0" expanded="true" />
-                <element signature="method#otherwise#0;class#AsyncResult#0" expanded="true" />
-                <element signature="class#4753:5362" expanded="true" />
-                <element signature="method#result#0;class#4753:5362" expanded="true" />
-                <element signature="e#5113#5114#0" expanded="true" />
-                <element signature="e#5142#5143#0" expanded="true" />
-                <element signature="e#5194#5195#0" expanded="true" />
-                <element signature="e#5276#5277#0" expanded="true" />
-                <element signature="e#5325#5326#0" expanded="true" />
-                <element signature="e#5355#5356#0" expanded="true" />
-                <element signature="docComment;method#otherwise#1;class#AsyncResult#0" expanded="true" />
-                <element signature="e#5838#5839#0" expanded="true" />
-                <element signature="e#5878#5879#0" expanded="true" />
-                <element signature="docComment;method#otherwiseEmpty#0;class#AsyncResult#0" expanded="true" />
-                <element signature="e#6336#6337#0" expanded="true" />
-                <element signature="e#6375#6376#0" expanded="true" />
+                <element signature="e#0#10489#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#setAutoCommit#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#execute#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#query#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#queryStream#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#queryWithParams#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#queryStreamWithParams#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#update#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#updateWithParams#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#call#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#callWithParams#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#close#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#close#1;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#commit#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#rollback#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#setQueryTimeout#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#batch#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#batchWithParams#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#batchCallableWithParams#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#setTransactionIsolation#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#getTransactionIsolation#0;class#SQLConnection#0" expanded="true" />
+                <element signature="docComment;method#unwrap#0;class#SQLConnection#0" expanded="true" />
+                <element signature="e#10464#10465#0" expanded="true" />
+                <element signature="e#10485#10486#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Handler.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/Handler.java">
+      <file leaf-file-name="HttpServer.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/http/HttpServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="283">
+              <caret line="152" column="13" lean-forward="false" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
               <folding>
-                <element signature="e#0#1031#0" expanded="true" />
-                <element signature="docComment;class#Handler#0" expanded="true" />
-                <element signature="docComment;method#handle#0;class#Handler#0" expanded="true" />
+                <element signature="e#0#6465#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#requestStream#0;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#requestHandler#0;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#requestHandler#1;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#connectionHandler#0;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#websocketStream#0;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#websocketHandler#0;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#websocketHandler#1;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#listen#0;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#listen#1;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#listen#2;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#listen#3;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#listen#4;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#listen#5;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#close#0;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#close#1;class#HttpServer#0" expanded="true" />
+                <element signature="docComment;method#actualPort#0;class#HttpServer#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -237,6 +401,7 @@
     <findStrings>
       <find>future\.complete\(\)\; \n</find>
       <find>page</find>
+      <find>/create</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -254,9 +419,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/header.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/page.ftl" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/footer.ftl" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/HttpServerVerticle.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db-queries.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/WikiDatabaseVerticle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java" />
       </list>
     </option>
   </component>
@@ -322,6 +491,31 @@
     <option name="width" value="1928" />
     <option name="height" value="1044" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>General</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -338,43 +532,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="vertx-wiki">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="vertx-wiki">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main/java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="io/vertx/starter">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MainVerticle">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -419,14 +576,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -445,13 +594,58 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wiki" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="vertx-wiki">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="vertx-wiki">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main/java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="io/vertx/starter">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MainVerticle">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../environment/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -554,6 +748,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="C:\Program Files\Git\usr\bin\bash.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <module name="" />
       <envs />
       <method />
@@ -961,6 +1166,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1017,6 +1228,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b2f1f7ee-8b5b-4030-b89d-7823f8e3410f" name="Default" comment="" />
@@ -1024,47 +1238,64 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498512075783</updated>
-      <workItem from="1498512080481" duration="17533000" />
+      <workItem from="1498512080481" duration="18151000" />
+      <workItem from="1498647552973" duration="25510000" />
     </task>
+    <task id="LOCAL-00001" summary="Se adecua el metodo render para eliminar la firma deprecada.-">
+      <created>1498648757228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1498648757228</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adecuacion de testo por defecto.">
+      <created>1499170984857</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1499170984857</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17533000" />
+    <option name="totallyTimeSpent" value="43661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18930481" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18849841" sideWeight="0.50701404" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22580644" sideWeight="0.5063898" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18930481" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18743344" sideWeight="0.51487416" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4449388" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41490546" sideWeight="0.4978701" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36151278" sideWeight="0.49361023" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.189099" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18849841" sideWeight="0.49298596" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.51390433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18743344" sideWeight="0.48512587" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="813" y="159" width="1011" height="781" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="813" y="159" width="1011" height="781" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1099,33 +1330,151 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se adecua el metodo render para eliminar la firma deprecada.-" />
+    <MESSAGE value="Adecuacion de testo por defecto." />
+    <MESSAGE value="Se actualiza lista de archivos ignorados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se actualiza lista de archivos ignorados" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="70" column="15" lean-forward="false" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2096">
+          <caret line="131" column="18" lean-forward="false" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MainVerticle#0" expanded="true" />
+            <element signature="method#start#0;class#MainVerticle#0" expanded="true" />
+            <element signature="e#497#783#0" expanded="true" />
+            <element signature="e#796#930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-web/3.4.2/vertx-web-3.4.2-sources.jar!/io/vertx/ext/web/handler/BodyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-web/3.4.2/vertx-web-3.4.2-sources.jar!/io/vertx/ext/web/handler/impl/BodyHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/page.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/header.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/AsyncResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1376">
+          <caret line="86" column="11" lean-forward="false" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#6379#0" expanded="false" />
+            <element signature="docComment;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#result#0;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#cause#0;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#succeeded#0;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#failed#0;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#map#0;class#AsyncResult#0" expanded="false" />
+            <element signature="method#map#0;class#AsyncResult#0" expanded="false" />
+            <element signature="class#2476:2988" expanded="false" />
+            <element signature="method#result#0;class#2476:2988" expanded="false" />
+            <element signature="e#2728#2729#0" expanded="false" />
+            <element signature="e#2777#2778#0" expanded="false" />
+            <element signature="e#2829#2830#0" expanded="false" />
+            <element signature="e#2882#2883#0" expanded="false" />
+            <element signature="e#2931#2932#0" expanded="false" />
+            <element signature="e#2981#2982#0" expanded="false" />
+            <element signature="docComment;method#map#1;class#AsyncResult#0" expanded="false" />
+            <element signature="e#3469#3470#0" expanded="false" />
+            <element signature="e#3501#3502#0" expanded="false" />
+            <element signature="docComment;method#mapEmpty#0;class#AsyncResult#0" expanded="false" />
+            <element signature="e#3994#3995#0" expanded="false" />
+            <element signature="e#4023#4024#0" expanded="false" />
+            <element signature="docComment;method#otherwise#0;class#AsyncResult#0" expanded="false" />
+            <element signature="method#otherwise#0;class#AsyncResult#0" expanded="false" />
+            <element signature="class#4753:5362" expanded="false" />
+            <element signature="method#result#0;class#4753:5362" expanded="false" />
+            <element signature="e#5113#5114#0" expanded="false" />
+            <element signature="e#5142#5143#0" expanded="false" />
+            <element signature="e#5194#5195#0" expanded="false" />
+            <element signature="e#5276#5277#0" expanded="false" />
+            <element signature="e#5325#5326#0" expanded="false" />
+            <element signature="e#5355#5356#0" expanded="false" />
+            <element signature="docComment;method#otherwise#1;class#AsyncResult#0" expanded="false" />
+            <element signature="e#5838#5839#0" expanded="false" />
+            <element signature="e#5878#5879#0" expanded="false" />
+            <element signature="docComment;method#otherwiseEmpty#0;class#AsyncResult#0" expanded="false" />
+            <element signature="e#6336#6337#0" expanded="false" />
+            <element signature="e#6375#6376#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#1031#0" expanded="false" />
+            <element signature="docComment;class#Handler#0" expanded="false" />
+            <element signature="docComment;method#handle#0;class#Handler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2.jar!/io/vertx/core/AbstractVerticle.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#1141#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#AbstractVerticle#0;class#AbstractVerticle#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="method#init#0;class#AbstractVerticle#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="method#start#0;class#AbstractVerticle#0" expanded="true" />
-            <element signature="method#stop#0;class#AbstractVerticle#0" expanded="true" />
-            <element signature="method#start#1;class#AbstractVerticle#0" expanded="true" />
-            <element signature="method#stop#1;class#AbstractVerticle#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1133,18 +1482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="65" column="12" lean-forward="false" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#4356#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1300#1301#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="method#clusteredVertx#0;class#Vertx#0" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
-            <element signature="e#4286#4296#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1152,12 +1489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#2593#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#bodyHandler#0;class#HttpServerRequest#0" expanded="true" />
-            <element signature="e#1968#2024#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,10 +1496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#1516#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1176,7 +1503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,65 +1514,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/starter/MainVerticle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/starter/MainVerticle.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2.jar!/io/vertx/core/Future.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#6053#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#future#0;class#Future#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1271#1272#0" expanded="true" />
-            <element signature="method#compose#0;class#Future#0" expanded="true" />
-            <element signature="e#1802#2201#0" expanded="true" />
-            <element signature="method#compose#1;class#Future#0" expanded="true" />
-            <element signature="e#2457#2915#0" expanded="true" />
-            <element signature="method#map#0;class#Future#0" expanded="true" />
-            <element signature="e#3172#3623#0" expanded="true" />
-            <element signature="method#map#1;class#Future#0" expanded="true" />
-            <element signature="e#3766#3929#0" expanded="true" />
-            <element signature="e#3996#3997#0" expanded="true" />
-            <element signature="e#4043#4044#0" expanded="true" />
-            <element signature="e#4165#4166#0" expanded="true" />
-            <element signature="e#4192#4193#0" expanded="true" />
-            <element signature="method#recover#0;class#Future#0" expanded="true" />
-            <element signature="e#4424#4891#0" expanded="true" />
-            <element signature="method#otherwise#0;class#Future#0" expanded="true" />
-            <element signature="e#5158#5612#0" expanded="true" />
-            <element signature="method#otherwise#1;class#Future#0" expanded="true" />
-            <element signature="e#5757#5927#0" expanded="true" />
-            <element signature="e#5996#5997#0" expanded="true" />
-            <element signature="e#6049#6050#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/Vertx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/http/HttpServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1371,197 +1647,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-sql-common/3.4.2/vertx-sql-common-3.4.2.jar!/io/vertx/ext/sql/SQLClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#481#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#1031#0" expanded="true" />
-            <element signature="docComment;class#Handler#0" expanded="true" />
-            <element signature="docComment;method#handle#0;class#Handler#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/AsyncResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="86" column="11" lean-forward="false" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#6379#0" expanded="true" />
-            <element signature="docComment;class#AsyncResult#0" expanded="true" />
-            <element signature="docComment;method#result#0;class#AsyncResult#0" expanded="true" />
-            <element signature="docComment;method#cause#0;class#AsyncResult#0" expanded="true" />
-            <element signature="docComment;method#succeeded#0;class#AsyncResult#0" expanded="true" />
-            <element signature="docComment;method#failed#0;class#AsyncResult#0" expanded="true" />
-            <element signature="docComment;method#map#0;class#AsyncResult#0" expanded="true" />
-            <element signature="e#2728#2729#0" expanded="true" />
-            <element signature="e#2777#2778#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2931#2932#0" expanded="true" />
-            <element signature="e#2981#2982#0" expanded="true" />
-            <element signature="docComment;method#map#1;class#AsyncResult#0" expanded="true" />
-            <element signature="e#3469#3470#0" expanded="true" />
-            <element signature="e#3501#3502#0" expanded="true" />
-            <element signature="docComment;method#mapEmpty#0;class#AsyncResult#0" expanded="true" />
-            <element signature="e#3994#3995#0" expanded="true" />
-            <element signature="e#4023#4024#0" expanded="true" />
-            <element signature="docComment;method#otherwise#0;class#AsyncResult#0" expanded="true" />
-            <element signature="method#otherwise#0;class#AsyncResult#0" expanded="true" />
-            <element signature="class#4753:5362" expanded="true" />
-            <element signature="method#result#0;class#4753:5362" expanded="true" />
-            <element signature="e#5113#5114#0" expanded="true" />
-            <element signature="e#5142#5143#0" expanded="true" />
-            <element signature="e#5194#5195#0" expanded="true" />
-            <element signature="e#5276#5277#0" expanded="true" />
-            <element signature="e#5325#5326#0" expanded="true" />
-            <element signature="e#5355#5356#0" expanded="true" />
-            <element signature="docComment;method#otherwise#1;class#AsyncResult#0" expanded="true" />
-            <element signature="e#5838#5839#0" expanded="true" />
-            <element signature="e#5878#5879#0" expanded="true" />
-            <element signature="docComment;method#otherwiseEmpty#0;class#AsyncResult#0" expanded="true" />
-            <element signature="e#6336#6337#0" expanded="true" />
-            <element signature="e#6375#6376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-web/3.4.2/vertx-web-3.4.2.jar!/io/vertx/ext/web/handler/BodyHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#1096#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-web/3.4.2/vertx-web-3.4.2-sources.jar!/io/vertx/ext/web/handler/BodyHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
+        <state relative-caret-position="416">
           <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#3075#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BodyHandler#0" expanded="true" />
-            <element signature="docComment;field#DEFAULT_BODY_LIMIT#0;class#BodyHandler#0" expanded="true" />
-            <element signature="docComment;field#DEFAULT_UPLOADS_DIRECTORY#0;class#BodyHandler#0" expanded="true" />
-            <element signature="docComment;field#DEFAULT_MERGE_FORM_ATTRIBUTES#0;class#BodyHandler#0" expanded="true" />
-            <element signature="docComment;field#DEFAULT_DELETE_UPLOADED_FILES_ON_END#0;class#BodyHandler#0" expanded="true" />
-            <element signature="docComment;method#create#0;class#BodyHandler#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1774#1775#0" expanded="true" />
-            <element signature="docComment;method#create#1;class#BodyHandler#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2043#2044#0" expanded="true" />
-            <element signature="docComment;method#setBodyLimit#0;class#BodyHandler#0" expanded="true" />
-            <element signature="docComment;method#setUploadsDirectory#0;class#BodyHandler#0" expanded="true" />
-            <element signature="docComment;method#setMergeFormAttributes#0;class#BodyHandler#0" expanded="true" />
-            <element signature="docComment;method#setDeleteUploadedFilesOnEnd#0;class#BodyHandler#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-web/3.4.2/vertx-web-3.4.2-sources.jar!/io/vertx/ext/web/handler/impl/BodyHandlerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
+        <state relative-caret-position="288">
           <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#7090#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1697#1698#0" expanded="true" />
-            <element signature="e#1749#1750#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="method#handle#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#setBodyLimit#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#setUploadsDirectory#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#setMergeFormAttributes#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#setDeleteUploadedFilesOnEnd#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#BHandler#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="e#3989#4494#0" expanded="true" />
-            <element signature="method#makeUploadDir#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#handle#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#uploadEnded#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#end#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#doEnd#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="method#deleteFileUploads#0;class#BHandler#0;class#BodyHandlerImpl#0" expanded="true" />
-            <element signature="e#6579#7066#0" expanded="true" />
-            <element signature="e#6849#7042#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="70" column="15" lean-forward="false" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="131" column="18" lean-forward="true" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#MainVerticle#0" expanded="true" />
-            <element signature="method#start#0;class#MainVerticle#0" expanded="true" />
-            <element signature="method#stop#0;class#MainVerticle#0" expanded="true" />
-            <element signature="method#prepareDataBase#0;class#MainVerticle#0" expanded="true" />
-            <element signature="e#2294#2823#0" expanded="true" />
-            <element signature="e#2548#2807#0" expanded="true" />
-            <element signature="method#startHttpServer#0;class#MainVerticle#0" expanded="true" />
-            <element signature="e#3446#3710#0" expanded="true" />
-            <element signature="e#3945#4720#0" expanded="true" />
-            <element signature="e#4372#4638#0" expanded="true" />
-            <element signature="method#pageRenderingHandler#0;class#MainVerticle#0" expanded="true" />
-            <element signature="e#4937#6286#0" expanded="true" />
-            <element signature="e#5100#6220#0" expanded="true" />
-            <element signature="e#5870#6136#0" expanded="true" />
-            <element signature="method#pageCreateHandler#0;class#MainVerticle#0" expanded="true" />
-            <element signature="method#pageUpdateHandler#0;class#MainVerticle#0" expanded="true" />
-            <element signature="e#6995#7750#0" expanded="true" />
-            <element signature="e#7372#7684#0" expanded="true" />
-            <element signature="method#pageDeletionHandler#0;class#MainVerticle#0" expanded="true" />
-            <element signature="e#7896#8426#0" expanded="true" />
-            <element signature="e#8061#8360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/page.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1569,7 +1673,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/header.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1577,8 +1681,513 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-sql-common/3.4.2/vertx-sql-common-3.4.2.jar!/io/vertx/ext/sql/SQLClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#481#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-sql-common/3.4.2/vertx-sql-common-3.4.2-sources.jar!/io/vertx/ext/sql/SQLClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#1704#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#SQLClient#0" expanded="false" />
+            <element signature="docComment;method#getConnection#0;class#SQLClient#0" expanded="false" />
+            <element signature="docComment;method#close#0;class#SQLClient#0" expanded="false" />
+            <element signature="docComment;method#close#1;class#SQLClient#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/AsyncResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#6379#0" expanded="false" />
+            <element signature="docComment;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#result#0;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#cause#0;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#succeeded#0;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#failed#0;class#AsyncResult#0" expanded="false" />
+            <element signature="docComment;method#map#0;class#AsyncResult#0" expanded="false" />
+            <element signature="method#map#0;class#AsyncResult#0" expanded="false" />
+            <element signature="class#2476:2988" expanded="false" />
+            <element signature="method#result#0;class#2476:2988" expanded="false" />
+            <element signature="e#2728#2729#0" expanded="false" />
+            <element signature="e#2777#2778#0" expanded="false" />
+            <element signature="e#2829#2830#0" expanded="false" />
+            <element signature="e#2882#2883#0" expanded="false" />
+            <element signature="e#2931#2932#0" expanded="false" />
+            <element signature="e#2981#2982#0" expanded="false" />
+            <element signature="docComment;method#map#1;class#AsyncResult#0" expanded="false" />
+            <element signature="e#3469#3470#0" expanded="false" />
+            <element signature="e#3501#3502#0" expanded="false" />
+            <element signature="docComment;method#mapEmpty#0;class#AsyncResult#0" expanded="false" />
+            <element signature="e#3994#3995#0" expanded="false" />
+            <element signature="e#4023#4024#0" expanded="false" />
+            <element signature="docComment;method#otherwise#0;class#AsyncResult#0" expanded="false" />
+            <element signature="method#otherwise#0;class#AsyncResult#0" expanded="false" />
+            <element signature="class#4753:5362" expanded="false" />
+            <element signature="method#result#0;class#4753:5362" expanded="false" />
+            <element signature="e#5113#5114#0" expanded="false" />
+            <element signature="e#5142#5143#0" expanded="false" />
+            <element signature="e#5194#5195#0" expanded="false" />
+            <element signature="e#5276#5277#0" expanded="false" />
+            <element signature="e#5325#5326#0" expanded="false" />
+            <element signature="e#5355#5356#0" expanded="false" />
+            <element signature="docComment;method#otherwise#1;class#AsyncResult#0" expanded="false" />
+            <element signature="e#5838#5839#0" expanded="false" />
+            <element signature="e#5878#5879#0" expanded="false" />
+            <element signature="docComment;method#otherwiseEmpty#0;class#AsyncResult#0" expanded="false" />
+            <element signature="e#6336#6337#0" expanded="false" />
+            <element signature="e#6375#6376#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1031#0" expanded="false" />
+            <element signature="docComment;class#Handler#0" expanded="false" />
+            <element signature="docComment;method#handle#0;class#Handler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="103" column="30" lean-forward="false" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-web/3.4.2/vertx-web-3.4.2-sources.jar!/io/vertx/ext/web/Router.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#9379#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#Router#0" expanded="false" />
+            <element signature="docComment;method#router#0;class#Router#0" expanded="false" />
+            <element signature="e#1364#1365#0" expanded="false" />
+            <element signature="e#1402#1403#0" expanded="false" />
+            <element signature="docComment;method#accept#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#route#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#route#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#route#2;class#Router#0" expanded="false" />
+            <element signature="docComment;method#routeWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#routeWithRegex#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#get#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#getWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#head#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#head#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#headWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#options#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#options#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#optionsWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#put#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#put#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#putWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#post#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#post#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#postWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#delete#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#delete#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#deleteWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#trace#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#trace#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#traceWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#connect#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#connect#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#connectWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#patch#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#patch#1;class#Router#0" expanded="false" />
+            <element signature="docComment;method#patchWithRegex#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#getRoutes#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#mountSubRouter#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#exceptionHandler#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#handleContext#0;class#Router#0" expanded="false" />
+            <element signature="docComment;method#handleFailure#0;class#Router#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/http/HttpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="152" column="13" lean-forward="false" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#6465#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#requestStream#0;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#requestHandler#0;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#requestHandler#1;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#connectionHandler#0;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#websocketStream#0;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#websocketHandler#0;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#websocketHandler#1;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#listen#0;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#listen#1;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#listen#2;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#listen#3;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#listen#4;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#listen#5;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#close#0;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#close#1;class#HttpServer#0" expanded="true" />
+            <element signature="docComment;method#actualPort#0;class#HttpServer#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-sql-common/3.4.2/vertx-sql-common-3.4.2-sources.jar!/io/vertx/ext/sql/SQLConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#10489#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#setAutoCommit#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#execute#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#query#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#queryStream#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#queryWithParams#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#queryStreamWithParams#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#update#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#updateWithParams#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#call#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#callWithParams#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#close#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#close#1;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#commit#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#rollback#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#setQueryTimeout#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#batch#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#batchWithParams#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#batchCallableWithParams#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#setTransactionIsolation#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#getTransactionIsolation#0;class#SQLConnection#0" expanded="true" />
+            <element signature="docComment;method#unwrap#0;class#SQLConnection#0" expanded="true" />
+            <element signature="e#10464#10465#0" expanded="true" />
+            <element signature="e#10485#10486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/Boolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="120" column="26" lean-forward="false" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+          <folding>
+            <element signature="e#3553#3554#0" expanded="true" />
+            <element signature="e#3619#3620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/rjeschke/txtmark/0.13/txtmark-0.13.jar!/com/github/rjeschke/txtmark/Processor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#20449#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Processor#0;class#Processor#0" expanded="true" />
+            <element signature="method#process#0;class#Processor#0" expanded="true" />
+            <element signature="method#process#1;class#Processor#0" expanded="true" />
+            <element signature="method#process#2;class#Processor#0" expanded="true" />
+            <element signature="method#process#3;class#Processor#0" expanded="true" />
+            <element signature="e#1928#1929#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="method#process#5;class#Processor#0" expanded="true" />
+            <element signature="method#process#6;class#Processor#0" expanded="true" />
+            <element signature="method#process#7;class#Processor#0" expanded="true" />
+            <element signature="method#process#8;class#Processor#0" expanded="true" />
+            <element signature="method#process#9;class#Processor#0" expanded="true" />
+            <element signature="method#process#10;class#Processor#0" expanded="true" />
+            <element signature="method#process#11;class#Processor#0" expanded="true" />
+            <element signature="method#process#12;class#Processor#0" expanded="true" />
+            <element signature="method#process#13;class#Processor#0" expanded="true" />
+            <element signature="method#process#14;class#Processor#0" expanded="true" />
+            <element signature="method#process#15;class#Processor#0" expanded="true" />
+            <element signature="method#process#16;class#Processor#0" expanded="true" />
+            <element signature="method#process#17;class#Processor#0" expanded="true" />
+            <element signature="method#process#18;class#Processor#0" expanded="true" />
+            <element signature="method#process#19;class#Processor#0" expanded="true" />
+            <element signature="method#process#20;class#Processor#0" expanded="true" />
+            <element signature="method#process#21;class#Processor#0" expanded="true" />
+            <element signature="method#process#22;class#Processor#0" expanded="true" />
+            <element signature="method#process#23;class#Processor#0" expanded="true" />
+            <element signature="method#process#24;class#Processor#0" expanded="true" />
+            <element signature="method#process#25;class#Processor#0" expanded="true" />
+            <element signature="method#process#26;class#Processor#0" expanded="true" />
+            <element signature="method#process#27;class#Processor#0" expanded="true" />
+            <element signature="method#readLines#0;class#Processor#0" expanded="true" />
+            <element signature="method#initListBlock#0;class#Processor#0" expanded="true" />
+            <element signature="method#recurse#0;class#Processor#0" expanded="true" />
+            <element signature="method#process#28;class#Processor#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/page.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="92" lean-forward="false" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/util/logging/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="217" column="13" lean-forward="false" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#90506#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Logger#0" expanded="true" />
+            <element signature="class#LoggerBundle#0;class#Logger#0" expanded="true" />
+            <element signature="method#LoggerBundle#0;class#LoggerBundle#0;class#Logger#0" expanded="true" />
+            <element signature="method#get#0;class#LoggerBundle#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;field#GLOBAL_LOGGER_NAME#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getGlobal#0;class#Logger#0" expanded="true" />
+            <element signature="method#getGlobal#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;field#global#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#Logger#0;class#Logger#0" expanded="true" />
+            <element signature="method#Logger#0;class#Logger#0" expanded="true" />
+            <element signature="method#Logger#1;class#Logger#0" expanded="true" />
+            <element signature="method#setCallersClassLoaderRef#0;class#Logger#0" expanded="true" />
+            <element signature="method#getCallersClassLoader#0;class#Logger#0" expanded="true" />
+            <element signature="method#Logger#2;class#Logger#0" expanded="true" />
+            <element signature="method#checkPermission#0;class#Logger#0" expanded="true" />
+            <element signature="class#SystemLoggerHelper#0;class#Logger#0" expanded="true" />
+            <element signature="method#getBooleanProperty#0;class#SystemLoggerHelper#0;class#Logger#0" expanded="true" />
+            <element signature="method#demandLogger#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getLogger#0;class#Logger#0" expanded="true" />
+            <element signature="method#getLogger#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getLogger#1;class#Logger#0" expanded="true" />
+            <element signature="method#getLogger#1;class#Logger#0" expanded="true" />
+            <element signature="method#getPlatformLogger#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getAnonymousLogger#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getAnonymousLogger#1;class#Logger#0" expanded="true" />
+            <element signature="method#getAnonymousLogger#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getResourceBundle#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getResourceBundleName#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#setFilter#0;class#Logger#0" expanded="true" />
+            <element signature="method#setFilter#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getFilter#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#log#0;class#Logger#0" expanded="true" />
+            <element signature="method#log#0;class#Logger#0" expanded="true" />
+            <element signature="method#doLog#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#log#1;class#Logger#0" expanded="true" />
+            <element signature="method#log#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#log#2;class#Logger#0" expanded="true" />
+            <element signature="method#log#2;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#log#3;class#Logger#0" expanded="true" />
+            <element signature="method#log#3;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#log#4;class#Logger#0" expanded="true" />
+            <element signature="method#log#4;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#log#5;class#Logger#0" expanded="true" />
+            <element signature="method#log#5;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#log#6;class#Logger#0" expanded="true" />
+            <element signature="method#log#6;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logp#0;class#Logger#0" expanded="true" />
+            <element signature="method#logp#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logp#1;class#Logger#0" expanded="true" />
+            <element signature="method#logp#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logp#2;class#Logger#0" expanded="true" />
+            <element signature="method#logp#2;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logp#3;class#Logger#0" expanded="true" />
+            <element signature="method#logp#3;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logp#4;class#Logger#0" expanded="true" />
+            <element signature="method#logp#4;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logp#5;class#Logger#0" expanded="true" />
+            <element signature="method#logp#5;class#Logger#0" expanded="true" />
+            <element signature="method#doLog#1;class#Logger#0" expanded="true" />
+            <element signature="method#doLog#2;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logrb#0;class#Logger#0" expanded="true" />
+            <element signature="method#logrb#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logrb#1;class#Logger#0" expanded="true" />
+            <element signature="method#logrb#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logrb#2;class#Logger#0" expanded="true" />
+            <element signature="method#logrb#2;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logrb#3;class#Logger#0" expanded="true" />
+            <element signature="method#logrb#3;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logrb#4;class#Logger#0" expanded="true" />
+            <element signature="method#logrb#4;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#logrb#5;class#Logger#0" expanded="true" />
+            <element signature="method#logrb#5;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#entering#0;class#Logger#0" expanded="true" />
+            <element signature="method#entering#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#entering#1;class#Logger#0" expanded="true" />
+            <element signature="method#entering#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#entering#2;class#Logger#0" expanded="true" />
+            <element signature="method#entering#2;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#exiting#0;class#Logger#0" expanded="true" />
+            <element signature="method#exiting#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#exiting#1;class#Logger#0" expanded="true" />
+            <element signature="method#exiting#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#throwing#0;class#Logger#0" expanded="true" />
+            <element signature="method#throwing#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#severe#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#warning#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#info#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#config#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#fine#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#finer#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#finest#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#severe#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#warning#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#info#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#config#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#fine#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#finer#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#finest#1;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#setLevel#0;class#Logger#0" expanded="true" />
+            <element signature="method#setLevel#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getLevel#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#isLoggable#0;class#Logger#0" expanded="true" />
+            <element signature="method#isLoggable#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getName#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#addHandler#0;class#Logger#0" expanded="true" />
+            <element signature="method#addHandler#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#removeHandler#0;class#Logger#0" expanded="true" />
+            <element signature="method#removeHandler#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getHandlers#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#setUseParentHandlers#0;class#Logger#0" expanded="true" />
+            <element signature="method#setUseParentHandlers#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getUseParentHandlers#0;class#Logger#0" expanded="true" />
+            <element signature="method#findSystemResourceBundle#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#findResourceBundle#0;class#Logger#0" expanded="true" />
+            <element signature="method#findResourceBundle#0;class#Logger#0" expanded="true" />
+            <element signature="method#setupResourceInfo#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#setResourceBundle#0;class#Logger#0" expanded="true" />
+            <element signature="method#setResourceBundle#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#getParent#0;class#Logger#0" expanded="true" />
+            <element signature="method#getParent#0;class#Logger#0" expanded="true" />
+            <element signature="docComment;method#setParent#0;class#Logger#0" expanded="true" />
+            <element signature="method#setParent#0;class#Logger#0" expanded="true" />
+            <element signature="method#doSetParent#0;class#Logger#0" expanded="true" />
+            <element signature="method#removeChildLogger#0;class#Logger#0" expanded="true" />
+            <element signature="method#updateEffectiveLevel#0;class#Logger#0" expanded="true" />
+            <element signature="method#getEffectiveLoggerBundle#0;class#Logger#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/HttpServerVerticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#start#0;class#HttpServerVerticle#0" expanded="true" />
+            <element signature="e#1881#2164#0" expanded="true" />
+            <element signature="method#indexHandler#0;class#HttpServerVerticle#0" expanded="true" />
+            <element signature="e#2378#2965#0" expanded="true" />
+            <element signature="e#2659#2897#0" expanded="true" />
+            <element signature="method#pageRenderingHandler#0;class#HttpServerVerticle#0" expanded="true" />
+            <element signature="e#3310#4234#0" expanded="true" />
+            <element signature="e#3928#4166#0" expanded="true" />
+            <element signature="method#pageUpdateHandler#0;class#HttpServerVerticle#0" expanded="true" />
+            <element signature="e#4831#5087#0" expanded="true" />
+            <element signature="method#pageCreateHandler#0;class#HttpServerVerticle#0" expanded="true" />
+            <element signature="method#pageDeletionHandler#0;class#HttpServerVerticle#0" expanded="true" />
+            <element signature="e#5780#6023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db-queries.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/MainVerticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MainVerticle#0" expanded="true" />
+            <element signature="method#start#0;class#MainVerticle#0" expanded="true" />
+            <element signature="e#497#783#0" expanded="true" />
+            <element signature="e#796#930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/vertx/guides/wiki/WikiDatabaseVerticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3291">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="docComment;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="method#loadSqlQueries#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="method#start#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="e#2801#3479#0" expanded="true" />
+            <element signature="e#3081#3463#0" expanded="true" />
+            <element signature="method#onMessage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="method#fetchAllPages#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="e#4300#4984#0" expanded="true" />
+            <element signature="e#4448#4905#0" expanded="true" />
+            <element signature="method#fetchPage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="e#5136#6060#0" expanded="true" />
+            <element signature="e#5329#5981#0" expanded="true" />
+            <element signature="method#createPage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="e#6193#6767#0" expanded="true" />
+            <element signature="e#6491#6688#0" expanded="true" />
+            <element signature="method#savePage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="e#6898#7467#0" expanded="true" />
+            <element signature="e#7191#7388#0" expanded="true" />
+            <element signature="method#deletePage#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="e#7559#8080#0" expanded="true" />
+            <element signature="e#7804#8001#0" expanded="true" />
+            <element signature="method#reportQueryError#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="class#SqlQuery#0;class#WikiDatabaseVerticle#0" expanded="true" />
+            <element signature="class#ErrorCodes#0;class#WikiDatabaseVerticle#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
