@@ -31,10 +31,7 @@ public class MainVerticle extends AbstractVerticle {
   private static final String SQL_ALL_PAGES = "select Name from Pages";
   private static final String SQL_DELETE_PAGE = "delete from Pages where Id = ?";
   private static final Logger LOGGER = LoggerFactory.getLogger(MainVerticle.class);
-  private static final String EMPTY_PAGE_MARKDOWN =
-    "# A new page\n" +
-      "\n" +
-      "Feel-free to write in Markdown!\n";
+  private static final String EMPTY_PAGE_MARKDOWN = "# A new page\n" + "\n" + "Feel-free to write in Markdown!\n";
   private final FreeMarkerTemplateEngine templateEngine = FreeMarkerTemplateEngine.create();
   private JDBCClient dbClient;
 
@@ -116,7 +113,7 @@ public class MainVerticle extends AbstractVerticle {
               .collect(Collectors.toList());
             context.put("title", "Wiki home");
             context.put("pages", pages);
-            templateEngine.render(context, "templates/","index.ftl", ar -> {
+            templateEngine.render(context, "templates/", "index.ftl", ar -> {
               if (ar.succeeded()) {
                 context.response().putHeader("Content-Type", "text/html");
                 context.response().end(ar.result());
